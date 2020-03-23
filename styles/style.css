@@ -1,0 +1,431 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	background: #68a4ff;
+	display-direction: column;
+}
+
+.clock {
+	margin-top: 70px;
+	width: 350px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff url(../images/clock2.png);
+	background-size: cover;
+	border-radius: 50%;
+	border: 20px solid #fff;
+	box-shadow: inset 0 0 30px rgba(0,0,0,.1),
+		0 20px 20px rgba(0,0,0,.2),
+		0 0 0 4px rgba(255,255,255,1);
+}
+
+.clock::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #848484;
+	z-index: 100000;
+	border-radius: 50%;
+}
+
+.hour,
+.min,
+.sec {
+	position: absolute;
+}
+
+.hour,
+.hr {
+	width: 160px;
+	height: 160px;
+}
+
+.min,
+.mn {
+	width: 190px;
+	height: 190px;
+}
+
+.sec,
+.sc {
+	width: 230px;
+	height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.hr::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 80px;
+	background: #848484;
+	z-index: 10;
+	border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 90px;
+	background: #d6d6d6d6;
+	z-index: 11;
+	border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 150px;
+	background: #ff6767;
+	z-index: 12;
+	border-radius: 6px 6px 0 0;
+}
+
+
+.skylineWestlandBig {
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	left: 10%;
+	display: none;
+}
+
+.skylineWestlandMedium {
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	left: 10%;
+	display: none;
+}
+
+.skylineWestlandSmall {
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	left: 10%;
+	display: flex;
+}
+
+.hello {
+	font-size: 23px;
+	display: flex;
+	position: fixed;
+	top: 500px;
+}
+
+.zon {
+	height: 100px;
+	width: 100px;
+	background-color: #F7F04E;
+	border-radius: 50%;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+.tomatoLove {
+	height: 200px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+
+
+.tomatoLove1 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieEen infinite ease-in-out ;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieEen {
+	0% { 
+  		opacity: 1; 
+  	}
+
+  	10% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+.tomatoLove2 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieTwee infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieTwee {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	10% {
+  		opacity: 1;
+  	}
+
+  	20% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+.tomatoLove3 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieDrie infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieDrie {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	10% {
+  		opacity: 0;
+  	}
+
+  	20% {
+  		opacity: 1;
+  	}
+
+  	30% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+
+.tomatoLove4 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieVier infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieVier {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	20% {
+  		opacity: 0;
+  	}
+
+  	30% {
+  		opacity: 1;
+  	}
+
+  	40% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+.tomatoLove5 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieVijf infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieVijf {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	30% {
+  		opacity: 0;
+  	}
+
+  	40% {
+  		opacity: 1;
+  	}
+
+  	50% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+.tomatoLove6 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieZes infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieZes {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	40% {
+  		opacity: 0;
+  	}
+
+  	50% {
+  		opacity: 1;
+  	}
+
+  	60% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+.tomatoLove7 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieZeven infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieZeven {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	50% {
+  		opacity: 0;
+  	}
+
+  	60% {
+  		opacity: 1;
+  	}
+
+  	70% {
+  		opacity: 0;
+  	}
+
+  	100% {
+  		opacity: 0;
+  	}
+  
+}
+
+.tomatoLove8 { /*Voor de animatie*/
+	animation: 2s tomatenAnimatieAcht infinite ease-in-out;
+	z-index: 10;
+}
+
+@keyframes tomatenAnimatieAcht {
+	0% { 
+  		opacity: 0; 
+  	}
+
+  	60% {
+  		opacity: 0;
+  	}
+
+  	70% {
+  		opacity: 1;
+  	}
+
+  	80% {
+  		opacity: 1;
+  	}
+
+  	100% {
+  		opacity: 1;
+  	}
+  
+}
+
+.tomatoLove9 { /*Voor de animatie*/
+	z-index: 1;
+}
+
+@media only screen and (min-width: 650px) {
+
+	.skylineWestlandMedium {
+		position: fixed;
+		width: 80%;
+		bottom: 0;
+		left: 10%;
+		display: flex;
+	}
+
+	.skylineWestlandSmall {
+		position: fixed;
+		width: 80%;
+		bottom: 0;
+		left: 10%;
+		display: none;
+	}
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	.skylineWestlandBig {
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	left: 10%;
+	display: flex;
+}
+
+.skylineWestlandMedium {
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	left: 10%;
+	display: none;
+}
+
+.skylineWestlandSmall {
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	left: 10%;
+	display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
